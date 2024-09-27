@@ -11,13 +11,13 @@ int main() {
         string a = to_string(n);
         reverse(a.begin(),a.end());
         for(int i=0; i<a.size(); ++i){
-            s+= a[i];
-            if(i!=a.size()-1) s+= ' ';
+            cout << int( a[i])-48;;
+            if(i!=a.size()-1) cout<< ' ';
         }
-        ans.push_back(s);
+        cout << "\n";
     }
-    for(int i=0; i<ans.size(); ++i){
-        cout << ans[i] << "\n";
-    }
+    //for(int i=0; i<ans.size(); ++i){
+     //   cout << ans[i] << "\n";
+    //}
     return 0;
 }
