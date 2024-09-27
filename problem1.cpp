@@ -9,11 +9,12 @@ int main() {
         for(int j=1; j<=k; j++){
             cout << j;
         }
-        cout <<' ';
+       for(int s=0; s<cnt*2; s++) cout <<' ';
         for(int j=k; j>0; j--)cout << j;
         cout << "\n";
         k--;
         cnt++;
+        
     }
     return 0;
 }
