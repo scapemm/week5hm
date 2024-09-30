@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
@@ -8,11 +9,9 @@ int main() {
         string s="";
         int n;
         cin >> n;
-        string a = to_string(n);
-        reverse(a.begin(),a.end());
-        for(int i=0; i<a.size(); ++i){
-            cout << int( a[i])-48;;
-            if(i!=a.size()-1) cout<< ' ';
+        while(n!=0){
+            cout << n%10 << ' ';
+            n/=10;
         }
         cout << "\n";
     }
